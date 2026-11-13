@@ -1,0 +1,13 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["../../biome.base.json"],
+  "files": {
+    "ignore": ["dist"]
+  },
+  "overrides": [
+    {
+      "include": ["src/protoc-gen-es-plugin.ts"],
+      "formatter": { "enabled": false }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "files": ["src/protoc-gen-es-plugin.ts"],
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    // We import the plugin's version number from package.json
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": false
+  }
+}

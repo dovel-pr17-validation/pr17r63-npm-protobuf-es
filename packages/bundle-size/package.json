@@ -1,0 +1,21 @@
+{
+  "name": "@bufbuild/bundle-size",
+  "private": true,
+  "scripts": {
+    "bundle-size": "tsx src/report.ts",
+    "generate": "buf generate buf.build/googleapis/googleapis:9475e2896f8a46d09806149f9382e538",
+    "postgenerate": "license-header .",
+    "format": "biome format --write",
+    "license-header": "license-header",
+    "lint": "biome lint --error-on-warnings"
+  },
+  "dependencies": {
+    "@bufbuild/buf": "^1.75.0",
+    "@bufbuild/protobuf": "2.17.0",
+    "@bufbuild/protoc-gen-es": "2.17.0",
+    "@bufbuild/protoplugin": "2.17.0",
+    "brotli": "^2.1.0",
+    "esbuild": "^0.28.2",
+    "google-protobuf": "4.0.3"
+  }
+}

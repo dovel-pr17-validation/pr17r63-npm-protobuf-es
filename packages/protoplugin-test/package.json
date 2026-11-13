@@ -1,0 +1,18 @@
+{
+  "name": "@bufbuild/protoplugin-test",
+  "private": true,
+  "scripts": {
+    "prebuild": "rm -rf ./dist/*",
+    "build": "../../node_modules/typescript/bin/tsc --project tsconfig.json --outDir ./dist",
+    "test": "tsx --test $(find src -type f -path '*.test.ts')",
+    "format": "biome format --write",
+    "license-header": "license-header",
+    "lint": "biome lint --error-on-warnings"
+  },
+  "type": "module",
+  "dependencies": {
+    "upstream-protobuf": "*",
+    "@bufbuild/protoplugin": "2.17.0",
+    "@bufbuild/protoc-gen-es": "2.17.0"
+  }
+}
